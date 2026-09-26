@@ -21,6 +21,7 @@
     "bench": "node scripts/benchmark.js",
     "test": "cross-env NODE_ENV=test npm run lint && npm run test:jsdom && npm run test:browser -- --project=chromium",
     "test:jsdom": "cross-env NODE_ENV=test node test/jsdom-node-runner --dot",
+    "test:jsdom:config": "cross-env NODE_ENV=test node test/jsdom-node-config --dot",
     "test:happydom": "cross-env NODE_ENV=test node test/happydom-node-runner --dot",
     "test:browser": "playwright test --config config/playwright.config.js",
     "test:browser:install": "playwright install",
